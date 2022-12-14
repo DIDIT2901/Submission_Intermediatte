@@ -1,0 +1,16 @@
+---------------------UNIT TES----------------------
+Skenario Test Login ViewModel :
+- Memastikan bahwa saveUser() dengan viewmodel serta dengan preferance sama
+- Memastikan bahwa loginUser() mengembalikan nilai NetwoekResponse.Success serta tidak null ketika berhasil login.
+
+Skenario Test SignUp ViewModel :
+- Memastikan bahwa signUp() mengembalikan nilai NetworkResponse.Success serta tidak null ketika berhasil sign up.
+
+Skenario Test Main ViewModel :
+- Memastikan bahwa getUser() berhasil mengembalikan data user serta tidak mengembalikan nilai null.
+- Memastikan bahwa getStory() berhasil mengembalikan pagingData serta tidak mengembalikan nilai null, serta memeriksa ketersediaan data serta jumlah data dari adapter
+- Memastikan bahwa logout() dengan mainViewModel serta dengan preferance sama.
+- Memastikan bahwa getStoriesWithLocation mengembalikan nilai NetworkResponse.Success serta tidak mengembalikan nilai null.
+
+Skenario Test AddStory ViewModel :
+- Memastikan bahwa uploadStory() mengembalikan nilai NetworkResponse.Success serta tidak mengembalikan nilai null.

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.detailstory.DetailStoryActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="734dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="300dp"/>
+
+    <ImageView
+        android:id="@+id/iv_cover_detail"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:contentDescription="@string/image_story"
+        android:scaleType="centerCrop"
+        android:transitionName="image_tr"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/semi_black"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:clickable="true"
+        android:elevation="7dp"
+        android:focusable="true"
+        app:cardBackgroundColor="@color/grey"
+        app:cardCornerRadius="7dp"
+        android:layout_marginBottom="-7dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline6">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_user_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="16dp"
+                android:paddingTop="16dp"
+                android:text="@string/user"
+                android:textColor="@color/semi_black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:transitionName="user_tr"
+                tools:ignore="RtlSymmetry" />
+
+            <TextView
+                android:id="@+id/tv_created_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="16dp"
+                android:paddingTop="8dp"
+                android:text="@string/created_at"
+                android:textColor="@color/semi_black"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                android:transitionName="crated_tr"
+                tools:ignore="RtlSymmetry" />
+
+            <TextView
+                android:id="@+id/tv_date_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="16dp"
+                android:text="@string/created_at"
+                android:textColor="@color/semi_black"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                android:transitionName="date_tr"
+                tools:ignore="RtlSymmetry" />
+
+            <TextView
+                android:id="@+id/tv_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="@string/description"
+                android:textColor="@color/semi_black"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
